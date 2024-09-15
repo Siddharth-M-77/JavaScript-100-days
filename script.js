@@ -70,4 +70,14 @@
 
 // console.log(countChar("ImmiSiiiga", "i"));
 
+// Question 4 ->COUNT character repeat in a paragraph OCCURENCES OF CHARACTER
+
+const countChar = (text, char) =>  [...text.toLowerCase()]
+    .filter(c => c === char.toLowerCase())
+    .length;
+
+const paragraph =
+  "In a small town, there lived a young boy named Tim. Tim loved to explore and discover new things.";
+
+console.log(countChar(paragraph, "t"));
 
