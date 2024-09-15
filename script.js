@@ -83,12 +83,19 @@
 
 //Q5 write  program to cheak TriangleType
 
-const cheakTrangleType = (a, b, c) => {
-  if (a === b && b === c) return "equileateral";
-  if (a === b || b === c || c === a) return "isoceles";
-  return "scalene";
-};
+// const cheakTrangleType = (a, b, c) => {
+//   if (a === b && b === c) return "equileateral";
+//   if (a === b || b === c || c === a) return "isoceles";
+//   return "scalene";
+// };
 
-console.log(cheakTrangleType(3, 3, 3));
-console.log(cheakTrangleType(3, 1, 3));
-console.log(cheakTrangleType(3, 4, 5));
+// console.log(cheakTrangleType(3, 3, 3));
+// console.log(cheakTrangleType(3, 1, 3));
+// console.log(cheakTrangleType(3, 4, 5));
+
+//Q6 Sort An Array
+
+const sort = (arr) => {
+  return arr.sort((a, b) => a - b);
+};
+console.log(sort([1, 5, 2, 0, 3, 6, 4, 7]));
