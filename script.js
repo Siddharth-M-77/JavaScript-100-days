@@ -72,12 +72,23 @@
 
 // Question 4 ->COUNT character repeat in a paragraph OCCURENCES OF CHARACTER
 
-const countChar = (text, char) =>  [...text.toLowerCase()]
-    .filter(c => c === char.toLowerCase())
-    .length;
+// const countChar = (text, char) =>  [...text.toLowerCase()]
+//     .filter(c => c === char.toLowerCase())
+//     .length;
 
-const paragraph =
-  "In a small town, there lived a young boy named Tim. Tim loved to explore and discover new things.";
+// const paragraph =
+//   "In a small town, there lived a young boy named Tim. Tim loved to explore and discover new things.";
 
-console.log(countChar(paragraph, "t"));
+// console.log(countChar(paragraph, "t"));
 
+//Q5 write  program to cheak TriangleType
+
+const cheakTrangleType = (a, b, c) => {
+  if (a === b && b === c) return "equileateral";
+  if (a === b || b === c || c === a) return "isoceles";
+  return "scalene";
+};
+
+console.log(cheakTrangleType(3, 3, 3));
+console.log(cheakTrangleType(3, 1, 3));
+console.log(cheakTrangleType(3, 4, 5));
