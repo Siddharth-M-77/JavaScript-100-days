@@ -95,7 +95,19 @@
 
 //Q6 Sort An Array
 
-const sort = (arr) => {
-  return arr.sort((a, b) => a - b);
-};
-console.log(sort([1, 5, 2, 0, 3, 6, 4, 7]));
+// const sort = (arr) => {
+//   return arr.sort((a, b) => a - b);
+// };
+// console.log(sort([1, 5, 2, 0, 3, 6, 4, 7]));
+
+
+//Q7=>palidrome a word or paragrph
+
+const isPalidrome = (str)=>{
+    str = str.toLowerCase().replace(/\W/g,"")
+
+    let reverse_word = str.split("").reverse().join("")
+    console.log(reverse_word)
+    return str===reverse_word?true:false
+}
+console.log(isPalidrome("helloo"))
