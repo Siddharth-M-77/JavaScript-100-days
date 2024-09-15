@@ -1,8 +1,7 @@
 //Question 1 -> FIND LONGEST WORD IN STRING
 
-//first you to convert it into array
-
 // const findLongestWord = (str) => {
+//   //first you to convert it into array
 //   if (str.trim().length === 0) return null;
 
 //   // 1 way to solve this question
@@ -25,22 +24,50 @@
 
 //Question 2 -> Hash Tag Generator and each word of first char will be capital letter
 
-const hashTagGenerator = (str) => {
-  if (str.trim().length === 0 || str.length > 280) return null;
-  str = str.split(" ");
-  
-  //1st way
-  str = str.map((curElem) =>
-    curElem.replace(curElem[0], curElem[0].toUpperCase())
-  );
+// const hashTagGenerator = (str) => {
+//   if (str.trim().length === 0 || str.length > 280) return null;
+//   str = str.split(" ");
 
-  //2nd way
-  str = str.map(
-    (curElem) => curElem.charAt(0).toUpperCase() + curElem.slice(1)
-  );
+//   //1st way
+//   str = str.map((curElem) =>
+//     curElem.replace(curElem[0], curElem[0].toUpperCase())
+//   );
 
-  str = `#${str.join("")}`;
+//   //2nd way
+//   str = str.map(
+//     (curElem) => curElem.charAt(0).toUpperCase() + curElem.slice(1)
+//   );
 
-  return str;
-};
-console.log(hashTagGenerator("my name is siddharth"));
+//   str = `#${str.join("")}`;
+
+//   return str;
+//   console.log(hashTagGenerator("my name is siddharth"));
+// };
+
+// Question 3 ->COUNT character repeat in a words OCCURENCES OF CHARACTER
+
+// const countChar = (word, char) => {
+
+//  //1st way
+
+//   word = word.toLowerCase();
+//   char = char.toLowerCase();
+//   totalChar = word.split("").reduce((accum, curChar) => {
+//     if (curChar === char) {
+//       accum++;
+//     }
+//     return accum;
+//   }, 0);
+//   return totalChar;
+// };
+// console.log(countChar("ImmiSiiiga", "i"));
+
+//2nd wayyy to solve this question
+
+// const countChar = (word, char) => {
+//   return [...word.toLowerCase()].filter((c) => c === char.toLowerCase()).length;
+// };
+
+// console.log(countChar("ImmiSiiiga", "i"));
+
+
