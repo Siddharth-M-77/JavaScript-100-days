@@ -100,14 +100,30 @@
 // };
 // console.log(sort([1, 5, 2, 0, 3, 6, 4, 7]));
 
-
 //Q7=>palidrome a word or paragrph
 
-const isPalidrome = (str)=>{
-    str = str.toLowerCase().replace(/\W/g,"")
+// const isPalidrome = (str) => {
+//   str = str.toLowerCase().replace(/\W/g, "");
 
-    let reverse_word = str.split("").reverse().join("")
-    console.log(reverse_word)
-    return str===reverse_word?true:false
-}
-console.log(isPalidrome("helloo"))
+//   let reverse_word = str.split("").reverse().join("");
+//   console.log(reverse_word);
+//   return str === reverse_word ? true : false;
+// };
+// console.log(isPalidrome("helloo"));
+
+
+
+//Q-8
+
+const arr = ["one"]
+const str = "hello"
+const res = arr.includes("on")  
+console.log(res) //ouput wil be false
+
+const res2 = arr.includes("onetwo")
+console.log(res2) //ouput wil be false
+
+const str2 = str.includes("ll")  //here it will cheak substrings also
+console.log(str2) //ouput wil be true
+
+
