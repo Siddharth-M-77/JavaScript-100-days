@@ -157,19 +157,40 @@
 
 //Q 11=>  sum(1,2) and sum(1)(2) program it so that ouput will be same for both condition
 
-function sum(arg1, arg2) {
-  if (typeof arg1 === "function") {
-    return arg1(arg2);
-  } else {
-    return arg1 + arg2;
-  }
+// function sum(arg1, arg2) {
+//   if (typeof arg1 === "function") {
+//     return arg1(arg2);
+//   } else {
+//     return arg1 + arg2;
+//   }
+// }
+
+// function makeFunction(value) {
+//   return function (y) {
+//     return value + y;
+//   };
+// }
+// console.log(sum(1, 2));
+// console.log(sum(makeFunction(1),2));
+
+//Q 13=> flat a array without flat method
+
+let arr = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+  [7, 8],
+];
+// let res = arr.flat() //built in flat() method
+
+function makeFlated(arr) {
+  return arr.reduce((accum, curElem) => {
+    return accum.concat(curElem)
+  },[]);
 }
 
-function makeFunction(value) {
-  return function (y) {
-    return value + y;
-  };
-}
-console.log(sum(1, 2));
-console.log(sum(makeFunction(1),2));
+console.log(makeFlated(arr));
 
+// reduce iterates over each sub-array.
+// concat merges each sub-array into the accumulator array, effectively flattening the array.
+// Both methods will give you the same result: [5, 6, 7, 8, 9, 0]
