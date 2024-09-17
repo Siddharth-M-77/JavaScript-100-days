@@ -129,24 +129,47 @@
 
 //here true convert into 1 and "" convert into 0 so 1 ==0
 
-
 //Q10=> (mergeStrings) add to strings and such that characters alternate between two string 😎😎😎😎
 
-const str1 = "Hello";
-const str2 = "world 123";
+// const str1 = "Hello";
+// const str2 = "world 123";
 
-function mergeStrings(s1, s2) {
-  let results = "";
-  let maxLength = Math.max(s1.length, s2.length);
+// function mergeStrings(s1, s2) {
+//   let results = "";
+//   let maxLength = Math.max(s1.length, s2.length);
 
-  for (i = 0; i <= maxLength; i++) {
-    if (i < s1.length) {
-      results += s1[i];
-    }
-    if (i < s2.length) {
-      results += s2[i];
-    }
+//   for (i = 0; i <= maxLength; i++) {
+//     if (i < s1.length) {
+//       results += s1[i];
+//     }
+//     if (i < s2.length) {
+//       results += s2[i];
+//     }
+//   }
+//   return results;
+// }
+// console.log(mergeStrings(str1, str2));
+
+//explanation  result ek khaali string hai jisme hum alternately characters ko store karte hain.
+// maxLength nikalta hai longest string ki length, taaki loop dono strings mein se sab characters le sake.
+// for loop ek-ek character str1 aur str2 se leke result mein add karta hai.
+// Agar koi string chhoti hai, toh doosri string ke remaining characters automatically merge ho jaayenge.
+
+//Q 11=>  sum(1,2) and sum(1)(2) program it so that ouput will be same for both condition
+
+function sum(arg1, arg2) {
+  if (typeof arg1 === "function") {
+    return arg1(arg2);
+  } else {
+    return arg1 + arg2;
   }
-  return results;
 }
-console.log(mergeStrings(str1, str2));
+
+function makeFunction(value) {
+  return function (y) {
+    return value + y;
+  };
+}
+console.log(sum(1, 2));
+console.log(sum(makeFunction(1),2));
+
