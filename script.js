@@ -111,13 +111,11 @@
 // };
 // console.log(isPalidrome("helloo"));
 
-
-
 //Q-8
 
 // const arr = ["one"]
 // const str = "hello"
-// const res = arr.includes("on")  
+// const res = arr.includes("on")
 // console.log(res) //ouput wil be false
 
 // const res2 = arr.includes("onetwo")
@@ -126,13 +124,29 @@
 // const str2 = str.includes("ll")  //here it will cheak substrings also
 // console.log(str2) //ouput wil be true
 
-
-
-//Q9=> 
-  console.log(true == "")  //o/p => false
+//Q9=>
+// console.log(true == "")  //o/p => false
 
 //here true convert into 1 and "" convert into 0 so 1 ==0
 
 
+//Q10=> (mergeStrings) add to strings and such that characters alternate between two string 😎😎😎😎
 
+const str1 = "Hello";
+const str2 = "world 123";
 
+function mergeStrings(s1, s2) {
+  let results = "";
+  let maxLength = Math.max(s1.length, s2.length);
+
+  for (i = 0; i <= maxLength; i++) {
+    if (i < s1.length) {
+      results += s1[i];
+    }
+    if (i < s2.length) {
+      results += s2[i];
+    }
+  }
+  return results;
+}
+console.log(mergeStrings(str1, str2));
