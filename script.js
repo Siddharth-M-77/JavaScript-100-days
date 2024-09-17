@@ -217,4 +217,22 @@
 // const max = maxNumberFind(arr);
 // console.log(max); // Output: 9
 
+//Q 15=> W.A.P that takes a non-negaive integetr as a input and returns its factorial
 
+function factorial(num) {
+  let fact = 1;
+
+  if (num === 0 || num === 1) {
+    return 1;
+  }
+
+  for (let i = 2; i <= num; i++) {
+    fact *= i;
+  }
+
+  return fact;
+}
+
+console.log(factorial(1)); // Output: 1
+console.log(factorial(5)); // Output: 120
+console.log(factorial(10)); // Output: 3628800
