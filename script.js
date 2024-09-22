@@ -247,3 +247,14 @@
 // };
 // console.log(avg(arr));
 
+//Cheak two arrays are equal or not
+
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [1, 2, 3, 4, 5];
+
+const arrayAreEqual = (arr1, arr2) => {
+  if (arr1.length !== arr2.length) return false;
+  //every method always have three thing curValue ,array & index and it always return boolean value(true or false)
+  return arr1.every((curValue, index) => curValue === arr2[index]);
+};
+console.log(arrayAreEqual(arr1, arr2));
