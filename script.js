@@ -219,20 +219,31 @@
 
 //Q 15=> W.A.P that takes a non-negaive integetr as a input and returns its factorial
 
-function factorial(num) {
-  let fact = 1;
+// function factorial(num) {
+//   let fact = 1;
 
-  if (num === 0 || num === 1) {
-    return 1;
-  }
+//   if (num === 0 || num === 1) {
+//     return 1;
+//   }
 
-  for (let i = 2; i <= num; i++) {
-    fact *= i;
-  }
+//   for (let i = 2; i <= num; i++) {
+//     fact *= i;
+//   }
 
-  return fact;
-}
+//   return fact;
+// }
 
-console.log(factorial(1)); // Output: 1
-console.log(factorial(5)); // Output: 120
-console.log(factorial(10)); // Output: 3628800
+// console.log(factorial(1)); // Output: 1
+// console.log(factorial(5)); // Output: 120
+// console.log(factorial(10)); // Output: 3628800
+
+//Q16  find the average of the array
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const avg = function (arr) {
+//   let total = arr.reduce((acc, curElem) => acc + curElem, 0);
+//   return total / arr.length;
+// };
+// console.log(avg(arr));
+
