@@ -301,7 +301,6 @@
 // };
 // console.log(sumOfSquare([1, 2, 3]));
 
-
 //W.A.P TO find the sum the min number  of th array ❓❓❓❓❓❓
 
 // let arr = [3, 1, 4, 1, 5, 9, 2, 6, 5];
@@ -311,3 +310,22 @@
 // }, arr[0]); // Initial value is the first element
 
 // console.log(minValue); // Output: 1
+
+//W.A.P or function to convert a string to camelCase & snake_case the sum the min number  of th array ❓❓❓❓❓❓
+
+// const camelCase = (str) => {
+//   return str
+//     .trim()
+//     .split(" ")
+//     .map((elem, index) => {
+//       if (index === 0) {
+//         return elem.toLowerCase();
+//       } else {
+//         return elem.charAt(0).toUpperCase() + elem.slice(1).toLowerCase();
+//       }
+//     })
+//     .join("");
+// };
+
+// console.log(camelCase("hello mera name sidd hai"));
+
