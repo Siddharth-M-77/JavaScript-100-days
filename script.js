@@ -65,7 +65,7 @@
 //2nd wayyy to solve this question 👇👇👇👇👇👇👇👇
 
 // const countChar = (word, char) => {
-//   return [...word.toLowerCase()].filter((c) => c === char.toLowerCase()).length;
+//   return [...word.toLowerCase()].filter((c) => c === char.toLowerCase()).
 // };
 
 // console.log(countChar("ImmiSiiiga", "i"));
@@ -247,14 +247,23 @@
 // };
 // console.log(avg(arr));
 
-//Cheak two arrays are equal or not
+// Q   W.A.P  Cheak two arrays are equal or not
 
-let arr1 = [1, 2, 3, 4, 5];
-let arr2 = [1, 2, 3, 4, 5];
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [1, 2, 3, 4, 5];
 
-const arrayAreEqual = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) return false;
-  //every method always have three thing curValue ,array & index and it always return boolean value(true or false)
-  return arr1.every((curValue, index) => curValue === arr2[index]);
-};
-console.log(arrayAreEqual(arr1, arr2));
+// const arrayAreEqual = (arr1, arr2) => {
+//   if (arr1.length !== arr2.length) return false;
+//   //every method always have three thing curValue ,array & index and it always return boolean value(true or false)
+//   return arr1.every((curValue, index) => curValue === arr2[index]);
+// };
+// console.log(arrayAreEqual(arr1, arr2));
+
+// W.A.P that takes a number as input and return the sum of its digit.❓❓❓❓
+
+// function sumNumber(a) {
+//   let arr = Array.from(String(a), Number); // 1st array me converr and then  Number ko  String mein convert kiya so that we can use reduce??
+//   return arr.reduce((acc, curVal) => acc + curVal, 0);
+// }
+
+// console.log(sumNumber(1234567)); // Output: 28
