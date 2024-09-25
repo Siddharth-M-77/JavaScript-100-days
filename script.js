@@ -301,3 +301,13 @@
 // };
 // console.log(sumOfSquare([1, 2, 3]));
 
+
+//W.A.P TO find the sum the min number  of th array ❓❓❓❓❓❓
+
+// let arr = [3, 1, 4, 1, 5, 9, 2, 6, 5];
+
+// let minValue = arr.reduce((min, current) => {
+//   return current < min ? current : min; // Compare current element with min
+// }, arr[0]); // Initial value is the first element
+
+// console.log(minValue); // Output: 1
