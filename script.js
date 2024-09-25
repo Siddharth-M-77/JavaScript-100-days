@@ -267,3 +267,15 @@
 // }
 
 // console.log(sumNumber(1234567)); // Output: 28
+
+//W.A.P that takes an array of integer as input and remove any duplicate elements,returning a new array with only the unique elements❓❓❓❓❓❓
+// function removeDuplicateFromArray(arr) {
+//   let newArr = [...new Set(arr)]; // 'Set' duplicates ko automatically remove kar deta hai aur  ... (spread operator): Ye iterable objects ke elements ko ek-ek karke nikalta hai aur unhe kisi aur array ya object mein daalne ki ability deta hai.
+//   return newArr;
+// }
+
+// console.log(
+//   removeDuplicateFromArray([1, 2, 3, 4, 5, 6, 7, 8, 3, 25, 6, 7, 4, 5, 6])
+// );
+
+
