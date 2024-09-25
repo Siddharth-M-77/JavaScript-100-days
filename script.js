@@ -278,4 +278,20 @@
 //   removeDuplicateFromArray([1, 2, 3, 4, 5, 6, 7, 8, 3, 25, 6, 7, 4, 5, 6])
 // );
 
+//W.A.P that takes a string as a input and return the count of vowels in that strings .Consider 'a' 'e' 'i' 'o' 'u' as vowels (both lowercase and uppercase)❓❓❓❓
+
+// function countVowel(str) {
+//   let count = 0
+//   let vowels = ["a", "e", "i", "o", "u"];
+//   let arr = str.toLowerCase().split("");
+
+//   arr.forEach((char)=>{
+//     if(vowels.includes(char)){
+//       count++
+//     }
+//   })
+//   return count;
+// }
+// console.log(countVowel("Hellooo"));
+
 
