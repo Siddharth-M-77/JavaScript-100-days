@@ -329,3 +329,13 @@
 
 // console.log(camelCase("hello mera name sidd hai"));
 
+//W.A.P to reverse a string without using any built in method ❓❓❓❓❓❓
+
+// const reverseString = (str) => {
+//   let r_str = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     r_str += str[i];
+//   }
+//   return r_str;
+// };
+// console.log(reverseString("Sidd"));
