@@ -294,4 +294,10 @@
 // }
 // console.log(countVowel("Hellooo"));
 
+//W.A.P TO find the sum of squares of all elements in an array ❓❓❓❓❓❓
+
+// const sumOfSquare = (arr) => {
+//  return arr.reduce((acc,curVal)=>acc+=curVal**2,0)
+// };
+// console.log(sumOfSquare([1, 2, 3]));
 
